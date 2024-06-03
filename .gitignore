@@ -1,0 +1,4 @@
+service-account-key.json
+target/
+dbt_packages/
+logs/
