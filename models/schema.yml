@@ -39,7 +39,7 @@ models:
         description: Date (UTC) that the order was placed
 
       - name: status
-        description: '{{ doc("orders_status") }}'
+        description: 'the status of the order data'
         tests:
           - accepted_values:
               values: ['placed', 'shipped', 'completed', 'return_pending', 'returned']
@@ -50,7 +50,7 @@ models:
     columns:
       - name: id
         description: "The primary key for this table"
-        data_tests:
+        tests:
           - unique
           - not_null
 
@@ -59,6 +59,6 @@ models:
     columns:
       - name: id
         description: "The primary key for this table"
-        data_tests:
+        tests:
           - unique
           - not_null
